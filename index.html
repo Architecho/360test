@@ -4,20 +4,20 @@
   </head>
   <body style="margin:0;">
     <a-scene>
-      <a-assets>
-        <a-asset-item id="mymodel" src="model.glb"></a-asset-item>
+      <a-assets timeout="30000">
+        <a-asset-item id="mymodel" src="25073 model 2026 03-10 3dwarehouse.glb"></a-asset-item>
       </a-assets>
 
       <a-sky color="#ECECEC"></a-sky>
 
       <a-entity
         gltf-model="#mymodel"
-        position="0 0 -3"
+        position="0 0 -5"
         rotation="0 45 0"
-        scale="1 1 1">
+        scale="3 3 3">
       </a-entity>
 
-      <a-camera position="0 1.6 0"></a-camera>
+      <a-camera position="0 1.6 0" look-controls="touchEnabled: true"></a-camera>
     </a-scene>
   </body>
 </html>
