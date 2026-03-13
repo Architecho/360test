@@ -1,23 +1,39 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AR Viewer</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+      }
+
+      .wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a {
+        display: inline-block;
+        padding: 18px 28px;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        background: #111;
+        border-radius: 10px;
+      }
+    </style>
   </head>
-  <body style="margin:0;">
-    <a-scene>
-      <a-assets timeout="30000">
-        <a-asset-item id="mymodel" src="25073 model 2026 03-10 3dwarehouse.glb"></a-asset-item>
-      </a-assets>
-
-      <a-sky color="#ECECEC"></a-sky>
-
-      <a-entity
-        gltf-model="#mymodel"
-        position="0 0 -5"
-        rotation="0 45 0"
-        scale="3 3 3">
-      </a-entity>
-
-      <a-camera position="0 1.6 0" look-controls="touchEnabled: true"></a-camera>
-    </a-scene>
+  <body>
+    <div class="wrap">
+      <a rel="ar" href="model.usdz">
+        View in AR
+      </a>
+    </div>
   </body>
 </html>
